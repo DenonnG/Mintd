@@ -6,48 +6,160 @@
 <meta name="theme-color" content="#0f0f0f">
 <meta name="description" content="MINTD is a small studio designing and building thoughtful websites for brands that have something worth saying, and want a site that actually says it.">
 <meta name="author" content="MINTD studio">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <link rel="canonical" href="https://mintd.cloud/">
 
 <!-- Social sharing -->
 <meta property="og:title" content="MINTD · Independent design studio">
 <meta property="og:description" content="Designing interfaces that feel like a place, not a page.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://mintd.cloud">
+<meta property="og:url" content="https://mintd.cloud/">
 <meta property="og:site_name" content="MINTD studio">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="MINTD · Independent design studio">
 <meta name="twitter:description" content="Designing interfaces that feel like a place, not a page.">
 <meta name="twitter:creator" content="@mintd_studio">
+<meta name="twitter:site" content="@mintd_studio">
+
+<!-- Social share image (1200×630) -->
+<meta property="og:image" content="https://mintd.cloud/og-image.png">
+<meta property="og:image:secure_url" content="https://mintd.cloud/og-image.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="MINTD studio — Some sites need more room to breathe.">
+<meta name="twitter:image" content="https://mintd.cloud/og-image.png">
+<meta name="twitter:image:alt" content="MINTD studio — Some sites need more room to breathe.">
 <!-- Favicon (inline SVG) -->
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230f0f0f' rx='6'/%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23f4f0e6' stroke-width='1'/%3E%3Ccircle cx='16' cy='16' r='8' fill='none' stroke='%23ff5b1f' stroke-width='1' stroke-dasharray='2 3'/%3E%3Ccircle cx='16' cy='16' r='2.5' fill='%23f4f0e6'/%3E%3C/svg%3E">
+<link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
 
 <title>MINTD · Independent design studio. Designing places, not pages.</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-<!-- Structured data -->
+<!-- Structured data — Organization + WebSite + WebPage + FAQPage (@graph).
+     NOTE FOR THE STUDIO: when your public profiles are live, paste their URLs into
+     the Organization "sameAs" array below, e.g.:
+       "sameAs": [
+         "https://www.instagram.com/mintd_studio",
+         "https://www.are.na/mintd",
+         "https://read.cv/mintd",
+         "https://www.linkedin.com/company/mintd-studio"
+       ]
+     (Real, verifiable profile links only — they strengthen entity recognition.) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "MINTD studio",
-  "alternateName": "MINTD",
-  "description": "Independent design studio designing and building thoughtful websites.",
-  "url": "https://mintd.cloud",
-  "sameAs": [],
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Mumbai",
-    "postalCode": "400050",
-    "addressCountry": "IN"
-  },
-  "email": "info@mintd.cloud",
-  "foundingDate": "2024",
-  "areaServed": "Worldwide",
-  "knowsAbout": ["Web design", "Brand identity", "Front-end development", "Motion design", "Editorial design"]
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://mintd.cloud/#organization",
+      "name": "MINTD studio",
+      "alternateName": "MINTD",
+      "legalName": "MINTD studio",
+      "url": "https://mintd.cloud/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://mintd.cloud/#logo",
+        "url": "https://mintd.cloud/icon-512.png",
+        "contentUrl": "https://mintd.cloud/icon-512.png",
+        "width": 512,
+        "height": 512,
+        "caption": "MINTD studio"
+      },
+      "image": { "@id": "https://mintd.cloud/#logo" },
+      "description": "Independent design studio designing and building thoughtful websites for brands that have something worth saying.",
+      "slogan": "Some sites need more room to breathe.",
+      "foundingDate": "2024",
+      "knowsAbout": ["Web design", "Brand identity", "Front-end development", "Motion design", "Editorial design", "Real-time 3D / WebGL", "Content management systems"],
+      "areaServed": { "@type": "Place", "name": "Worldwide" },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Mumbai",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400050",
+        "addressCountry": "IN"
+      },
+      "email": "info@mintd.cloud",
+      "contactPoint": [
+        { "@type": "ContactPoint", "contactType": "sales", "email": "info@mintd.cloud", "availableLanguage": ["English"] },
+        { "@type": "ContactPoint", "contactType": "partnerships", "email": "partners@mintd.cloud", "availableLanguage": ["English"] },
+        { "@type": "ContactPoint", "contactType": "press", "email": "press@mintd.cloud", "availableLanguage": ["English"] },
+        { "@type": "ContactPoint", "contactType": "human resources", "email": "hr@mintd.cloud", "availableLanguage": ["English"] }
+      ],
+      "makesOffer": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Website design & build", "description": "End-to-end design and front-end development of bespoke brand websites." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Site redesign", "description": "Rebuilding and redesigning existing websites for brands that already have an identity." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Editorial & content sites", "description": "Multi-page editorial products with a custom content management system." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Front-end development", "description": "Production front-end engineering: motion, performance, and CMS integration." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Real-time 3D / WebGL", "description": "Interactive product views and spatial storytelling rendered in the browser." } }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://mintd.cloud/#website",
+      "url": "https://mintd.cloud/",
+      "name": "MINTD studio",
+      "description": "Independent design studio. Designing places, not pages.",
+      "publisher": { "@id": "https://mintd.cloud/#organization" },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mintd.cloud/#webpage",
+      "url": "https://mintd.cloud/",
+      "name": "MINTD · Independent design studio. Designing places, not pages.",
+      "description": "MINTD is a small studio designing and building thoughtful websites for brands that have something worth saying, and want a site that actually says it.",
+      "isPartOf": { "@id": "https://mintd.cloud/#website" },
+      "about": { "@id": "https://mintd.cloud/#organization" },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://mintd.cloud/og-image.png",
+        "width": 1200,
+        "height": 630
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mintd.cloud/#faq",
+      "url": "https://mintd.cloud/#faq",
+      "isPartOf": { "@id": "https://mintd.cloud/#website" },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How long does a typical project take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Five weeks for a standard brand site. Three for the urgent ones. Ten for a multi-page editorial product with a custom CMS. We give you a real number on the first call, not a range."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you work with our existing brand?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. About half our work is sites for brands that already have an identity. We're careful not to redo what doesn't need redoing. We'll audit what exists, tell you what's working, and only touch what needs touching."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens after launch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Thirty days of bug fixes and small adjustments are included. That's when most real-world issues surface. After that, we offer a small monthly retainer for ongoing care, or you can just message us when you need something. Most of our clients do the second thing."
+          }
+        }
+      ]
+    }
+  ]
 }
 </script>
 
@@ -4439,6 +4551,8 @@ footer {
 
 <a id="top" tabindex="-1" aria-hidden="true"></a>
 
+<a class="skip-link" href="#main">Skip to content</a>
+
 <noscript>
   <div style="position: fixed; top: 0; left: 0; right: 0; z-index: 9999; background: #0f0f0f; color: #f4f0e6; padding: 16px 24px; text-align: center; font-family: 'JetBrains Mono', monospace; font-size: 12px; border-bottom: 1px solid #ff5b1f;">
     This site uses JavaScript for animations and interactions. For the full studio experience, enable JS. Or just enjoy the static version.
@@ -4510,7 +4624,7 @@ footer {
      NAV
      ============================================================ -->
 <nav class="main-nav" id="nav">
-  <a href="#" class="logo">
+  <a href="#top" class="logo">
     <span class="logo-mark">
       <svg viewBox="0 0 26 26" aria-hidden="true">
         <circle cx="13" cy="13" r="12" fill="none" stroke="#f4f0e6" stroke-width="1"/>
@@ -4563,6 +4677,11 @@ footer {
     </div>
   </div>
 </div>
+
+<!-- ============================================================
+     MAIN CONTENT
+     ============================================================ -->
+<main id="main">
 
 <!-- ============================================================
      HERO
@@ -4970,9 +5089,9 @@ footer {
 <section class="work-room-section reveal" id="work">
   <div class="work-room-intro">
     <div class="section-label">
-      Selected work
+      The studio's own site
       <span class="sep"></span>
-      <span class="num">2024 / 2025</span>
+      <span class="num">2026</span>
     </div>
     <h2 class="reveal-words">Step <em>inside</em> the studio.</h2>
   </div>
@@ -4990,29 +5109,29 @@ footer {
       <!-- Four case study walls -->
       <div class="wall wall-clickable wall-ceiling" data-project="placeholder-top" data-wall="ceiling">
         <div class="wall-number">03</div>
-        <h3 class="wall-title">Lorem<br><em>Ipsum</em></h3>
-        <div class="wall-meta">Placeholder / TBD</div>
+        <h3 class="wall-title">Type<br><em>&amp; voice</em></h3>
+        <div class="wall-meta">Typography / editorial</div>
         <div class="wall-cta"><span>View</span> <span class="arrow">→</span></div>
       </div>
 
       <div class="wall wall-clickable wall-right" data-project="placeholder-right" data-wall="right">
         <div class="wall-number">02</div>
-        <h3 class="wall-title">Consectetur<br><em>Adipiscing</em></h3>
-        <div class="wall-meta">Placeholder / TBD</div>
+        <h3 class="wall-title">Motion<br><em>&amp; feel</em></h3>
+        <div class="wall-meta">Interaction / micro-detail</div>
         <div class="wall-cta"><span>View</span> <span class="arrow">→</span></div>
       </div>
 
       <div class="wall wall-clickable wall-floor" data-project="placeholder-bottom" data-wall="floor">
         <div class="wall-number">04</div>
-        <h3 class="wall-title">Dolor<br><em>Sit Amet</em></h3>
-        <div class="wall-meta">Placeholder / TBD</div>
+        <h3 class="wall-title">Built<br><em>right</em></h3>
+        <div class="wall-meta">Performance / craft</div>
         <div class="wall-cta"><span>View</span> <span class="arrow">→</span></div>
       </div>
 
       <div class="wall wall-clickable wall-left" data-project="mercer" data-wall="left">
         <div class="wall-number">01</div>
-        <h3 class="wall-title">Mercer<br><em>&amp; Sons</em></h3>
-        <div class="wall-meta">Custom furniture / 2024</div>
+        <h3 class="wall-title">The 3D<br><em>room</em></h3>
+        <div class="wall-meta">Real-time 3D / WebGL</div>
         <div class="wall-cta"><span>View</span> <span class="arrow">→</span></div>
       </div>
     </div>
@@ -5033,19 +5152,19 @@ footer {
         <button class="case-close" type="button" aria-label="Close case detail">
           <svg viewBox="0 0 24 24"><path d="M19 6 L 5 18 M 5 6 L 19 18" stroke-linecap="round"/></svg>
         </button>
-        <div class="case-num">/ 03 · Placeholder</div>
-        <h3 class="case-title">Lorem <em>Ipsum</em></h3>
+        <div class="case-num">/ 03 · This site</div>
+        <h3 class="case-title">Type <em>&amp; voice</em></h3>
         <div class="case-meta">
-          <span>Placeholder section</span><span class="sep">·</span><span>TBD</span>
+          <span>Typography</span><span class="sep">·</span><span>2026</span>
         </div>
-        <p class="case-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p class="case-summary">Everyone reaches for the same three safe fonts and writes like a template filled in by committee. We didn't. Three typefaces here are doing real work, and the words are meant to sound like a person, not a brand. Even the spacing got argued over. It's the difference between a site you skim and one you actually read.</p>
         <div class="case-stats">
-          <div><strong>00</strong><span>Placeholder</span></div>
-          <div><strong>TBD</strong><span>Placeholder</span></div>
-          <div><strong>·</strong><span>Placeholder</span></div>
+          <div><strong>3</strong><span>Type families</span></div>
+          <div><strong>2</strong><span>Accent voices</span></div>
+          <div><strong>1</strong><span>System</span></div>
         </div>
         <div class="case-tags">
-          <span>Lorem</span><span>Ipsum</span><span>Dolor</span><span>Sit Amet</span>
+          <span>Bricolage Grotesque</span><span>Instrument Serif</span><span>JetBrains Mono</span><span>Type scale</span>
         </div>
       </div>
     </div>
@@ -5058,19 +5177,19 @@ footer {
         <button class="case-close" type="button" aria-label="Close case detail">
           <svg viewBox="0 0 24 24"><path d="M19 6 L 5 18 M 5 6 L 19 18" stroke-linecap="round"/></svg>
         </button>
-        <div class="case-num">/ 02 · Placeholder</div>
-        <h3 class="case-title">Consectetur <em>Adipiscing</em></h3>
+        <div class="case-num">/ 02 · This site</div>
+        <h3 class="case-title">Motion <em>&amp; feel</em></h3>
         <div class="case-meta">
-          <span>Placeholder section</span><span class="sep">·</span><span>TBD</span>
+          <span>Interaction design</span><span class="sep">·</span><span>2026</span>
         </div>
-        <p class="case-summary">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        <p class="case-summary">You know how some sites just feel nice to move around, and you can't really say why? That's the bit we obsess over. The cursor, the buttons that lean in when you get close, the way things arrive as you scroll. All built by hand and nudged until it felt right, not dragged in from an animation kit. If none of it jumped out at you, good. That was the idea.</p>
         <div class="case-stats">
-          <div><strong>00</strong><span>Placeholder</span></div>
-          <div><strong>TBD</strong><span>Placeholder</span></div>
-          <div><strong>·</strong><span>Placeholder</span></div>
+          <div><strong>1</strong><span>Custom cursor</span></div>
+          <div><strong>0</strong><span>Animation libraries</span></div>
+          <div><strong>~16ms</strong><span>Frame budget</span></div>
         </div>
         <div class="case-tags">
-          <span>Nemo</span><span>Enim</span><span>Voluptatem</span><span>Quia</span>
+          <span>Custom cursor</span><span>Magnetic UI</span><span>Scroll reveal</span><span>Easing</span>
         </div>
       </div>
     </div>
@@ -5083,19 +5202,19 @@ footer {
         <button class="case-close" type="button" aria-label="Close case detail">
           <svg viewBox="0 0 24 24"><path d="M19 6 L 5 18 M 5 6 L 19 18" stroke-linecap="round"/></svg>
         </button>
-        <div class="case-num">/ 04 · Placeholder</div>
-        <h3 class="case-title">Dolor <em>Sit Amet</em></h3>
+        <div class="case-num">/ 04 · This site</div>
+        <h3 class="case-title">Built <em>right</em></h3>
         <div class="case-meta">
-          <span>Placeholder section</span><span class="sep">·</span><span>TBD</span>
+          <span>Engineering</span><span class="sep">·</span><span>2026</span>
         </div>
-        <p class="case-summary">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p class="case-summary">A site can look incredible and still drive you up the wall: slow to load, weird on a phone, impossible to change a word without emailing someone. So we sweat the dull stuff. It's quick, it works from a keyboard, search engines can read it, and your team can edit it without us on speed dial. Looking good is the easy part. Looking good and not falling over takes the extra week.</p>
         <div class="case-stats">
-          <div><strong>00</strong><span>Placeholder</span></div>
-          <div><strong>TBD</strong><span>Placeholder</span></div>
-          <div><strong>·</strong><span>Placeholder</span></div>
+          <div><strong>0</strong><span>Layout shift, goal</span></div>
+          <div><strong>1</strong><span>Skip link</span></div>
+          <div><strong>4</strong><span>Schema types</span></div>
         </div>
         <div class="case-tags">
-          <span>Lorem</span><span>Ipsum</span><span>Consectetur</span><span>Adipiscing</span>
+          <span>Semantic HTML</span><span>Accessibility</span><span>Core Web Vitals</span><span>Structured data</span>
         </div>
       </div>
     </div>
@@ -5108,19 +5227,19 @@ footer {
         <button class="case-close" type="button" aria-label="Close case detail">
           <svg viewBox="0 0 24 24"><path d="M19 6 L 5 18 M 5 6 L 19 18" stroke-linecap="round"/></svg>
         </button>
-        <div class="case-num">/ 01</div>
-        <h3 class="case-title">Mercer <em>&amp; Sons</em></h3>
+        <div class="case-num">/ 01 · This site</div>
+        <h3 class="case-title">The 3D <em>room</em></h3>
         <div class="case-meta">
-          <span>Custom furniture</span><span class="sep">·</span><span>2024</span>
+          <span>Real-time 3D · WebGL</span><span class="sep">·</span><span>2026</span>
         </div>
-        <p class="case-summary">A third-generation furniture workshop that hadn't updated their brand since 1998. We rebuilt the identity, shot new photography, and built a slow, deliberate commerce site that lets the craft speak. The Times wrote about it.</p>
+        <p class="case-summary">Go on, drag it around. Most studio sites are a grid of screenshots you scroll past once; this one's a whole room, drawn live in your browser. No flat images faking the depth. Poke at the corners and you'll see. Mostly we wanted to show a site can do this, not just say so in a deck.</p>
         <div class="case-stats">
-          <div><strong>NYT</strong><span>Press feature</span></div>
-          <div><strong>+180%</strong><span>Lead volume</span></div>
-          <div><strong>4 months</strong><span>End to end</span></div>
+          <div><strong>5</strong><span>Surfaces, one cube</span></div>
+          <div><strong>0</strong><span>Images or video</span></div>
+          <div><strong>60fps</strong><span>Render target</span></div>
         </div>
         <div class="case-tags">
-          <span>Brand</span><span>Site</span><span>Commerce</span><span>Photography</span>
+          <span>WebGL</span><span>CSS 3D</span><span>Three.js</span><span>Pointer-driven</span>
         </div>
       </div>
     </div>
@@ -5131,50 +5250,51 @@ footer {
     <button class="m-card" type="button" data-project="mercer">
       <div class="m-card-header">
         <div class="m-num">/ 01</div>
-        <h3>Mercer <em>&amp; Sons</em></h3>
-        <div class="m-meta">Custom furniture · 2024</div>
-        <div class="m-outcome">NYT feature</div>
+        <h3>The 3D <em>room</em></h3>
+        <div class="m-meta">Real-time 3D · WebGL</div>
+        <div class="m-outcome">Live in your browser</div>
         <span class="m-expand-icon" aria-hidden="true">+</span>
       </div>
       <div class="m-card-body">
         <div class="m-card-body-inner">
-          <p class="m-summary">A third-generation furniture workshop that hadn't updated their brand since 1998. We rebuilt the identity, shot new photography, and built a slow, deliberate commerce site that lets the craft speak. The Times wrote about it.</p>
+          <p class="m-summary">Go on, drag it around. Most studio sites are a grid of screenshots you scroll past once; this one's a whole room, drawn live in your browser. No flat images faking the depth. Poke at the corners and you'll see. Mostly we wanted to show a site can do this, not just say so in a deck.</p>
           <div class="m-stats">
-            <div><strong>NYT</strong><span>Press feature</span></div>
-            <div><strong>+180%</strong><span>Lead volume</span></div>
-            <div><strong>4 months</strong><span>End to end</span></div>
-            <div><strong>2024</strong><span>Launched</span></div>
+            <div><strong>5</strong><span>Surfaces</span></div>
+            <div><strong>0</strong><span>Images or video</span></div>
+            <div><strong>60fps</strong><span>Render target</span></div>
+            <div><strong>WebGL</strong><span>+ CSS 3D</span></div>
           </div>
           <div class="m-tags">
-            <span>Brand</span><span>Site</span><span>Commerce</span><span>Photography</span>
+            <span>WebGL</span><span>CSS 3D</span><span>Three.js</span><span>Pointer-driven</span>
           </div>
         </div>
       </div>
     </button>
 
-    <button class="m-card m-card-placeholder" type="button" data-project="placeholder-right">
+    <button class="m-card" type="button" data-project="placeholder-right">
       <div class="m-card-header">
-        <div class="m-num">/ 02 · Placeholder</div>
-        <h3>Consectetur <em>Adipiscing</em></h3>
-        <div class="m-meta">Placeholder · TBD</div>
-        <div class="m-outcome">Placeholder content</div>
+        <div class="m-num">/ 02</div>
+        <h3>Motion <em>&amp; feel</em></h3>
+        <div class="m-meta">Interaction · micro-detail</div>
+        <div class="m-outcome">Hand-tuned, no library</div>
         <span class="m-expand-icon" aria-hidden="true">+</span>
       </div>
       <div class="m-card-body">
         <div class="m-card-body-inner">
-          <p class="m-summary">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+          <p class="m-summary">You know how some sites just feel nice to move around, and you can't really say why? That's the bit we obsess over. The cursor, the buttons that lean in when you get close, the way things arrive as you scroll. All built by hand and nudged until it felt right, not dragged in from an animation kit. If none of it jumped out at you, good. That was the idea.</p>
           <div class="m-stats">
-            <div><strong>00</strong><span>Placeholder</span></div>
-            <div><strong>TBD</strong><span>Placeholder</span></div>
-            <div><strong>·</strong><span>Placeholder</span></div>
-            <div><strong>·</strong><span>Placeholder</span></div>
+            <div><strong>1</strong><span>Custom cursor</span></div>
+            <div><strong>0</strong><span>Animation libraries</span></div>
+            <div><strong>~16ms</strong><span>Frame budget</span></div>
+            <div><strong>3</strong><span>Reveal styles</span></div>
           </div>
           <div class="m-tags">
-            <span>Nemo</span><span>Enim</span><span>Voluptatem</span><span>Quia</span>
+            <span>Custom cursor</span><span>Magnetic UI</span><span>Scroll reveal</span><span>Easing</span>
           </div>
         </div>
       </div>
     </button>
+
   </div>
 
 </section>
@@ -5342,66 +5462,6 @@ footer {
 </section>
 
 <!-- ============================================================
-     TESTIMONIALS
-     ============================================================ -->
-<section class="testimonials reveal">
-  <div class="section-label">
-    Said about the studio
-    <span class="sep"></span>
-    <span class="num">testimonials</span>
-  </div>
-  <h2 class="reveal-words">Words from <em>real</em> people who shipped real sites.</h2>
-
-  <div class="testimonial-grid">
-    <div class="testimonial">
-      <blockquote>
-        They moved faster than our last in-house team, and the work has aged better. Six months in, we still find details we hadn't noticed.
-      </blockquote>
-      <footer>
-        <div class="t-person">
-          <div class="t-avatar">MR</div>
-          <div>
-            <div class="t-name">Maya Rodriguez</div>
-            <div class="t-role">VP Engineering · Lumen</div>
-          </div>
-        </div>
-        <div class="t-stars">●●●●●</div>
-      </footer>
-    </div>
-    <div class="testimonial">
-      <blockquote>
-        They asked the right question on day one. Then they answered it on day two: visually, in the browser, not in a deck. Sold.
-      </blockquote>
-      <footer>
-        <div class="t-person">
-          <div class="t-avatar">TH</div>
-          <div>
-            <div class="t-name">Theo Halberg</div>
-            <div class="t-role">Co-founder · Argo Foods</div>
-          </div>
-        </div>
-        <div class="t-stars">●●●●●</div>
-      </footer>
-    </div>
-    <div class="testimonial">
-      <blockquote>
-        What you actually want from a studio is taste and execution. MINTD has both. Most have one or neither.
-      </blockquote>
-      <footer>
-        <div class="t-person">
-          <div class="t-avatar">PN</div>
-          <div>
-            <div class="t-name">Priya Nair</div>
-            <div class="t-role">Brand director · Mercer &amp; Sons</div>
-          </div>
-        </div>
-        <div class="t-stars">●●●●●</div>
-      </footer>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
      PHILOSOPHY / PRINCIPLES
      ============================================================ -->
 <section class="philosophy reveal" id="manifesto">
@@ -5535,11 +5595,10 @@ footer {
      CTA BAND · Booking
      ============================================================ -->
 <section class="cta-band reveal">
-  <div class="cta-band-tag">Two slots available</div>
   <h2>Let's make something <em>good.</em></h2>
   <div class="cta-band-row">
     <a href="mailto:info@mintd.cloud" class="cta-mail">info<em>@</em>mintd.cloud</a>
-    <a href="#" class="btn-pill magnetic" data-open-modal>
+    <a href="#contact" class="btn-pill magnetic" data-open-modal>
       <span class="dot"></span>
       Or send us a brief
     </a>
@@ -5629,6 +5688,8 @@ footer {
   </div>
 </section>
 
+</main>
+
 <!-- ============================================================
      FOOTER
      ============================================================ -->
@@ -5641,20 +5702,11 @@ footer {
     <div class="footer-emails">
       <h5>General</h5>
       <a href="mailto:info@mintd.cloud">info@mintd.cloud</a>
-      <span class="label">Partnerships</span>
-      <a href="mailto:partners@mintd.cloud">partners@mintd.cloud</a>
-      <span class="label">Press</span>
-      <a href="mailto:press@mintd.cloud">press@mintd.cloud</a>
-      <span class="label">Careers</span>
-      <a href="mailto:hr@mintd.cloud">hr@mintd.cloud</a>
     </div>
     <div>
       <h5>Studio</h5>
-      <a href="#">About</a>
-      <a href="#">Work</a>
-      <a href="#">Journal</a>
-      <a href="#">Careers</a>
-      <a href="#">Press kit</a>
+      <a href="#studio">About</a>
+      <a href="#work">Work</a>
     </div>
     <div>
       <h5>Located</h5>
@@ -5664,8 +5716,6 @@ footer {
         <span id="footer-time" style="font-variant-numeric: tabular-nums;">--:-- IST</span>
         <span style="width: 6px; height: 6px; background: var(--accent); border-radius: 50%; animation: pulse 1.6s ease-in-out infinite; display: inline-block;"></span>
       </p>
-      <span class="label" style="margin-top: 16px; display: block;">Working with</span>
-      <p style="color: var(--text-dim);">Teams in NYC, Berlin, Tokyo &amp; SF</p>
     </div>
   </div>
 
